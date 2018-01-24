@@ -1,18 +1,4 @@
-@media (max-width: 768px) {
-    .logo{
-        display: none;
-    }
-    html,body{
-        background-color: #fff !important;
-    }
-    .sign{
-        background-color: #fff;
-    }
-    .main{
-        margin: 0 auto;
-        box-shadow: none;
-    }
-}
+
 html, body {
     height: 100%;
     background-color: #f1f1f1 !important;
@@ -90,6 +76,7 @@ html, body {
     padding: 4px 12px 4px 35px;
     border: 1px solid #c8c8c8;
     border-bottom: none;
+    background-color: rgba(181,181,181,0.09);
 }
 .main form input.top-radius{
     border-radius: 4px 4px 0 0;
@@ -222,3 +209,18 @@ html, body {
     color:  #a0a0a0;
 }
 
+@media (max-width: 768px) {
+    .logo{
+        display: none;
+    }
+    html,body{
+        background-color: #fff !important;
+    }
+    .sign{
+        background-color: #fff;
+    }
+    .main{
+        margin: 0 auto;
+        box-shadow: none;
+    }
+}
