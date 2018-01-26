@@ -1,226 +1,183 @@
-
-html, body {
-    height: 100%;
-    background-color: #f1f1f1 !important;
-}
-
-.sign {
-    height: 100%;
+.sign{
+    width: 100%;
     font-size: 14px;
     text-align: center;
-    background-color: #f1f1f1;
 }
-
-.logo {
+.logo{
     position: absolute;
-    top: 50px;
+    top: 56px;
     left: 50px;
 }
-
-.logo img {
-    width: 150px;
+.logo img{
+    width: 100px;
 }
-
-.main {
+.main{
     width: 400px;
-    background-color: #fff;
-    margin: 50px auto 0px;
+    margin: 165px auto 0;
     padding: 50px 50px 30px;
+    background-color: #fff;
     border-radius: 4px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
     display: inline-block;
 }
-
-.main .title {
+.main .title{
     margin: 0 auto 50px;
     padding: 10px;
     color: #939393;
-}
 
-.main .title h4 {
-    margin: 0;
+}
+.main .title h4{
     font-size: 18px;
+    margin: 0;
 }
-
-.main .title h4 a {
+.main .title h4 a , .main .title h4 b{
     padding: 10px;
 }
-
-.main .title h4 b {
-    padding: 10px;
-}
-
 .main .title h4 a.active {
+    font-weight: 700;
     color: #ea6f5a !important;
     border-bottom: 2px solid #ea6f5a;
-    font-weight: 700;
 }
-
-.main .title h4 a:hover {
+.main .title h4 a:hover{
     border-bottom: 2px solid #ea6f5a;
 }
-
-.main form {
+.main form{
     margin: 0 0 30px;
     color: #969696;
 }
-
-.main form .input-prepend {
-    width: 100%;
+.main form .input-prepend{
     position: relative;
+    width: 100%;
 }
-
-.main form .input-prepend input {
+.main form .input-prepend input{
     width: 100%;
     height: 50px;
     padding: 4px 12px 4px 35px;
     border: 1px solid #c8c8c8;
+    background-color: rgb(248,248,248);
     border-bottom: none;
-    background-color: rgba(181,181,181,0.09);
 }
 .main form input.top-radius{
     border-radius: 4px 4px 0 0;
 }
 .main form input.bottom-radius{
-    border-radius: 0  0 4px 4px;
+    border-radius: 0 0 4px 4px;
     border-bottom: 1px solid #c8c8c8;
 }
-/*.main form .input-prepend:nth-of-type(2) input {*/
-    /*width: 100%;*/
-    /*height: 50px;*/
-    /*padding: 4px 12px 4px 35px;*/
-    /*border: 1px solid #c8c8c8;*/
-    /*border-radius: 0 0 4px 4px;*/
-    /*background-color: rgb(248, 248, 248);*/
-/*}*/
-
 .main form .input-prepend i {
     position: absolute;
     color: #969696;
     top: 18px;
     left: 15px;
-    font-size: 20px;
 }
-
 .main form .remember {
     float: left;
     margin: 25px 0;
-}
 
+}
 .main form .help {
     float: right;
     margin: 25px 0;
 }
-
-.main form > input {
+.main form>input{
     width: 100%;
     display: block;
     border-radius: 20px;
 }
-
-.main .more-sign p {
+.main .more-sign{
     font-size: 14px;
     color: #b8b8b8;
+}
+.main .more-sign p{
     position: relative;
     margin-bottom: 20px;
 }
-
-.main .more-sign p:before {
+.main .more-sign p:before{
     content: '';
     width: 60px;
+    border: 0.5px solid #b8b8b8;
     position: absolute;
     top: 10px;
-    border-bottom: 1px solid #b5b5b5;
     left: 30px;
 }
-
-.main .more-sign p:after {
+.main .more-sign p:after{
     content: '';
     width: 60px;
+    border: 0.5px solid #b8b8b8;
     position: absolute;
     top: 10px;
-    border-bottom: 1px solid #b5b5b5;
     right: 30px;
 }
-
-.main .more-sign ul {
-    margin-bottom: 20px;
+.main .more-sign ul{
+    margin-bottom: 10px;
 }
-
-.main .more-sign ul li {
+.main .more-sign ul li{
     display: inline-block;
-    color: white;
-    border-radius:25px;
-    margin:0 5px;
-}
-
-.main .more-sign ul li:nth-child(1) {
-    background: #e05244;
-}
-
-.main .more-sign ul li:nth-child(2) {
-    background: #00bb29;
-}
-.main .more-sign ul li:nth-child(3) {
-    background: #498ad5;
-}
-.main .more-sign ul li:nth-child(4) {
-    background: rgba(181,181,181,0.2);
-}
-.main .more-sign ul li a {
-    width: 50px;
-    height: 50px;
-    display: block;
-    line-height: 55px;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 50px;
+    margin: 5px;
 }
 .main .more-sign ul li a i{
-    font-size: 25px;
+    font-size: 20px;
+
 }
-.main form input.sign-up-btn{
+.main .more-sign ul li.weibo{
+    background-color: #e05244;
+}
+.main .more-sign ul li.weixin{
+    background-color: #00bb29;
+}
+.main .more-sign ul li.qq{
+    background-color: #498ad5;
+}
+.main .more-sign ul li.qita{
+    background-color: rgb(248,248,248);
+    color: #939393;
+}
+.main .more-sign ul li a{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+}
+
+.main .sign-up-btn{
     margin-top: 20px;
 }
 .main form p.sign-up-msg{
-    margin:15px 0;
-    text-align: center;
+    margin: 15px 0;
     font-size: 12px;
-    color: #969696;
+    text-align: center;
     line-height: 20px;
+    color: #969696;
 }
-.main form p.sign-up-msg a{
-    color: #3194d0 !important;
-}
-.main for .ssm{
+.main form .ssm{
     position: relative;
+    /*display: none;*/
 }
 .main form .input-prepend a.send-ssm{
-    width: 100px;
-    height: 36px;
-    line-height: 22px;
     position: absolute;
-    top: 7px;
-    right: 7px;
-    color: #fff !important;
-    text-align: center;
+    right: 5px;
+    top: 10px;
+    color: #fff!important;
     border-radius: 20px;
-    font-size: 13px;
+    font-size: 12px;
+    /*padding: px;*/
+    display: block;
     opacity: .5;
 }
-::-webkit-input-placeholder {
-    color:  #a0a0a0;
-}
 
-@media (max-width: 768px) {
+
+@media (max-width:768px) {
     .logo{
         display: none;
     }
-    html,body{
-        background-color: #fff !important;
-    }
-    .sign{
+    #sign-template {
         background-color: #fff;
     }
     .main{
-        margin: 0 auto;
         box-shadow: none;
+        margin: 0 auto;
     }
 }

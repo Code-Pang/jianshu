@@ -2,7 +2,7 @@
   "name": "jianshu",
   "version": "1.0.0",
   "description": "Nuxt.js project",
-  "author": "752456184@qq.com <752456184@qq.com>",
+  "author": "command110 <1106861637@qq.com>",
   "private": true,
   "scripts": {
     "dev": "backpack dev",
@@ -17,6 +17,7 @@
     "bootstrap-vue": "^1.4.1",
     "cross-env": "^5.0.1",
     "express": "^4.15.3",
+    "jquery": "^3.3.1",
     "normalize.css": "^7.0.0",
     "nuxt": "^1.0.0-rc3",
     "source-map-support": "^0.4.15"
