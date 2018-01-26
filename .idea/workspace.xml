@@ -4,21 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/nuxt.config.js" line="12" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d1370e9-286e-4575-9251-d0921d17e0ae" name="Default" comment="Default">
-      <change beforePath="" afterPath="$PROJECT_DIR$/components/myHeader.vue" />
+    <list default="true" id="1d1370e9-286e-4575-9251-d0921d17e0ae" name="Default" comment="完成导航栏">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/assets/css/sign.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" afterPath="$PROJECT_DIR$/layouts/default.vue" />
-      <change beforePath="$PROJECT_DIR$/layouts/error.vue" afterPath="$PROJECT_DIR$/layouts/error.vue" />
-      <change beforePath="$PROJECT_DIR$/layouts/sign.vue" afterPath="$PROJECT_DIR$/layouts/sign.vue" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.js" afterPath="$PROJECT_DIR$/nuxt.config.js" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" afterPath="$PROJECT_DIR$/pages/index.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/sign-in.vue" afterPath="$PROJECT_DIR$/pages/sign-in.vue" />
-      <change beforePath="$PROJECT_DIR$/pages/sign-up.vue" afterPath="$PROJECT_DIR$/pages/sign-up.vue" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -270,7 +257,7 @@
       <workItem from="1516861564439" duration="10419000" />
       <workItem from="1516885674662" duration="219000" />
       <workItem from="1516928918574" duration="13092000" />
-      <workItem from="1516950214815" duration="10000" />
+      <workItem from="1516950214815" duration="39000" />
     </task>
     <task id="LOCAL-00001" summary="登录注册页面">
       <created>1516782960313</created>
@@ -286,11 +273,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516783081189</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完成导航栏">
+      <created>1516950247985</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1516950247986</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77840000" />
+    <option name="totallyTimeSpent" value="77869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -374,7 +368,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="登录注册页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录注册页面" />
+    <MESSAGE value="完成导航栏" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成导航栏" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
