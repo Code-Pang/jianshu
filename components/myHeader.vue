@@ -12,10 +12,10 @@
                     写文章
                 </nuxt-link>
                 <!--登录和注册按钮-->
-                <nuxt-link class='btn sign-up' to="/sign-up">注册</nuxt-link>
-                <nuxt-link class="btn sign-in" to="/sign-in">登录</nuxt-link>
+                <nuxt-link to="/sign-up" class="btn sign-up">注册</nuxt-link>
+                <nuxt-link to="/sign-in" class="btn sign-in">登录</nuxt-link>
                 <!--如果用户登录,那么显示用户头像-->
-                <div style="display: none" class="user" @mouseover="userShow=true" @mouseleave="userShow=false">
+                <div style="display:none;" class="user" @mouseover="userShow=true" @mouseleave="userShow=false">
                     <div class="drop-down">
                         <nuxt-link class="avatar" to="/users">
                             <img src="../assets/img/avatar.jpg">
@@ -71,7 +71,7 @@
                                 <span>关注</span>
                             </nuxt-link>
                         </li>
-                        <li class="notify"@mouseover="notifyShow=true"@mouseleave="notifyShow=false">
+                        <li class="notify" @mouseover="notifyShow=true" @mouseleave="notifyShow=false">
                             <nuxt-link to="/">
                                 <i class="fa fa-bell-o"></i>
                                 <span>消息</span>
@@ -112,9 +112,11 @@
                             </div>
                         </li>
                         <li class="search">
-                            <form action=""method="post">
-                                <input type="text"placeholder="搜索"@focus="bgShow=true">
-                                <nuxt-link to="/search"class="search-btn":class="{active:bgShow}"@blur="bgShow=false"><i class="fa fa-search"aria-hidden="true"></i></nuxt-link>
+                            <form method="post">
+                                <input type="text" placeholder="搜索" @focus="bgShow=true" @blur="bgShow=false">
+                                <nuxt-link to="/search" class="search-btn" :class="{active:bgShow}">
+                                    <i class="fa fa-search"></i>
+                                </nuxt-link>
                             </form>
                         </li>
                     </ul>
@@ -129,12 +131,11 @@
             return {
                 userShow:false,
                 notifyShow:false,
-                bgShow:false
+                bgShow:false,
             }
         },
         name:'myHeader'//给组件命名
     }
-
 </script>
 <style scope>
     nav{
@@ -177,29 +178,30 @@
         color: #fff!important;
         border-radius: 20px;
     }
-    nav a.sign-in{
-        float: right;
-        /*width: 100px;*/
-        /*height: 40px;*/
-        margin: 11px 6px 0;
-        line-height: 24px;
-        font-size: 15px;
-        padding: 6px 12px;
-        color: #969696 !important;
+    nav a.sign-in {
+        float:right;
+        margin:11px 6px 0 10px;
+        line-height:24px;
+        font-size:15px;
+        padding:6px 12px;
+        color:#969696!important;
     }
-    nav a.sign-up{
-        float: right;
-        width: 100px;
-        height:40px;
+    nav a.sign-in:active {
+        box-shadow: none;
+    }
+    nav a.sign-up {
+        float:right;
+        width:80px;
+        height:38px;
         margin:7px 6px 0 10px;
-        line-height: 24px;
-        font-size: 20px !important;
-        border: 1px solid #ea6f5a;
+        line-height:24px;
+        font-size:15px;
+        border:1px solid #ea6f5a;
         border-radius: 20px;
-        color: #ea6f5a !important;
+        color:#ea6f5a!important;
     }
-    nav a.sign-up:hover{
-        background-color: rgb(254,247,246)
+    nav a.sign-up:hover {
+        background:rgb(254,247,246);
     }
     nav .user {
         float:right;
@@ -287,27 +289,62 @@
         color:#ea6f5a;
         background:#fff;
     }
-    @media (max-width:868px) {
-        nav .nav-list{
-            display: none;
+    nav .nav-list .search {
+        padding-left:15px;
+    }
+    nav .nav-list .search:hover {
+        background:#fff;
+    }
+    nav .nav-list .search form {
+        margin-top:9px;
+        position:relative;
+    }
+    nav .nav-list .search form input {
+        width:240px;
+        height:38px;
+        border:none;
+        background:#eee;
+        border-radius: 20px;
+        padding:0 30px 0 20px;
+        font-size:15px;
+        transition:width ease-in .3s;
+    }
+    nav .nav-list .search form input:focus {
+        width:320px;
+    }
+    nav .nav-list .search form a.search-btn{
+        display:block;
+        width:30px;
+        height:30px;
+        line-height:30px;
+        position:absolute;
+        right:10px;
+        top:4px;
+        text-align:center;
+    }
+    nav .nav-list .search form a.active {
+        background:#969696;
+        border-radius: 50%;
+        color:#fff!important;
+    }
+    nav .nav-list .search form a.search-btn i {
+        font-size:18px;
+    }
+    @media (max-width:768px){
+        nav .nav-list {
+            display:none;
         }
     }
-    /*@media (max-width:768px) {*/
-        /*nav .nav-list{*/
-            /*display: none;*/
-        /*}*/
-    /*}*/
     @media (max-width:1440px) {
         nav .nav-list>li>a i {
             display:none;
         }
-        nav .nav-list .search form input{
-            width: 160px;
+        nav .nav-list .search form input {
+            width:160px;
         }
-        nav .nav-list .search form input:focus{
-            width: 240px;
+        nav .nav-list .search form input:focus {
+            width:240px;
         }
-
     }
     @media (max-width:1080px) {
         nav .nav-list>li>a i {
@@ -316,14 +353,13 @@
         nav .nav-list>li>a span {
             display:none;
         }
-        nav .nav-list .search form input{
-            width: 150px;
+        nav .nav-list .search form input {
+            width:150px;
         }
-        nav .nav-list .search form input:focus{
-            width: 150px;
+        nav .nav-list .search form input:focus {
+            width:150px;
         }
     }
-
     nav .nav-list .notify {
         position:relative;
     }
@@ -351,47 +387,4 @@
         color:#ea6f5a;
         font-size:18px;
     }
-    nav .nav-list .search{
-        padding-left: 15px;
-    }
-    nav .nav-list .search:hover{
-        background-color: #fff;
-    }
-    nav .nav-list .search form{
-        margin-top: 9px;
-        position: relative;
-    }
-
-    nav .nav-list .search form input{
-        width: 240px;
-        height: 38px;
-        border: none;
-        background-color: #eee;
-        border-radius: 20px;
-        padding:0 30px 0 20px ;
-        font-size: 15px;
-        transition:width ease-in .5s;
-    }
-    nav .nav-list .search form input:focus{
-        width: 320px;
-    }
-    nav .nav-list .search form a i{
-        position: absolute;
-        /*width: 30px;*/
-        /*height: 30px;*/
-        right:16px;
-        top: 8px;
-        font-size: 20px !important;
-        /*background-color: #a6004c;*/
-        /*padding: 5;*/
-    }
-    /*nav .nav-list .search .search-btn{*/
-        /*display: block;*/
-    /*}*/
-    nav .nav-list .search form a.active{
-        background-color: #969696;
-        border-radius: 50%;
-        color: #fff;
-    }
-
 </style>
